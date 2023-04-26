@@ -1,0 +1,73 @@
+#collection {
+  padding-bottom: 120px;
+}
+
+.collectionTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  color: #56593d;
+  margin-bottom: 80px;
+}
+
+.collectionItems {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+}
+
+.collectionItem {
+  text-align: center;
+}
+
+.collectionImg {
+  margin-bottom: 15px;
+  width: 380px;
+}
+
+.collectionSubtitle {
+  margin-bottom: 7px;
+  color: #56593d;
+}
+
+.collectionPrice {
+  color: #56593d;
+}
+
+@media only screen and (max-width: 1230px) {
+  .collectionImg {
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .collectionItems {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    gap: 80px;
+  }
+
+  #collection {
+    padding-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .collectionTitle {
+    margin-bottom: 40px;
+  }
+
+  .collectionItems {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .collectionImg {
+    width: 220px;
+  }
+}

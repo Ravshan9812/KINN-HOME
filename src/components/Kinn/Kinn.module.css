@@ -1,0 +1,66 @@
+#kinn {
+  padding-bottom: 192px;
+}
+
+.kinnTitle {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 39px;
+  color: #56593d;
+}
+
+.kinnContent {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.imgItem {
+  background-color: #000;
+  overflow: hidden;
+  height: 297px;
+}
+
+.kinnContent img {
+  width: 297px;
+  transform: scale(1.1);
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.kinnContent img:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 992px) {
+  #kinn {
+    padding-bottom: 120px;
+  }
+
+  .kinnContent {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .kinnContent {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .kinnContent img {
+    width: 230px;
+  }
+
+  .imgItem {
+    height: inherit;
+  }
+}

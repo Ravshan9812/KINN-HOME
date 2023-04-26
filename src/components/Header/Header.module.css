@@ -1,0 +1,175 @@
+.headerContent {
+  margin: 16px 0;
+  width: 100%;
+  height: 730px;
+  max-width: 1328px;
+  margin: 0 auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-bottom: 110px;
+}
+
+.headerText {
+  position: absolute;
+  top: 70%;
+  right: 5%;
+  text-align: end;
+}
+
+.headerText p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #56593d;
+  margin-bottom: 10px;
+}
+
+.headerText h1 {
+  font-size: 45px;
+  font-weight: 400;
+  color: #56593d;
+  margin-bottom: 25px;
+}
+
+.btn {
+  color: #fff;
+  padding: 16px 25px 17px 25px;
+  border: 2px solid #56593d;
+  background: #56593d;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: #56593d;
+  background: none;
+}
+
+.mainText h2 {
+  width: 100%;
+  max-width: 1094px;
+  font-size: 50px;
+  font-weight: 400;
+  color: #56593d;
+  margin: 0 auto 25px auto;
+  text-align: center;
+  line-height: 81px;
+}
+
+.mainLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 93px;
+}
+
+.mainLinks a {
+  color: #56593d;
+  font-size: 20px;
+  margin-bottom: 154px;
+  position: relative;
+}
+
+.mainLinks a::before {
+  position: absolute;
+  content: "\279C";
+  top: -10%;
+  right: -30%;
+}
+
+@media only screen and (max-width: 1230px) {
+  .headerContent {
+    margin-bottom: 40px;
+  }
+
+  .headerText {
+    top: 60%;
+  }
+
+  .mainText h2 {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .headerContent {
+    margin-bottom: 5px;
+  }
+
+  .headerText p {
+    font-size: 15px;
+  }
+
+  .headerText h1 {
+    font-size: 30px;
+  }
+
+  .btn {
+    padding: 10px 20px 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headerContent {
+    height: 520px;
+    margin-bottom: 0px;
+  }
+
+  .headerText p {
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+
+  .headerText h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    padding: 6px 15px 6px 15px;
+    font-size: 10px;
+  }
+
+  .mainLinks a {
+    margin-bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .headerContent {
+    height: 360px;
+    margin-bottom: 0px;
+  }
+
+  .headerText p {
+    font-size: 5px;
+    margin-bottom: 0;
+  }
+
+  .headerText h1 {
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+
+  .btn {
+    padding: 3px 10px 3px 10px;
+    font-size: 5px;
+  }
+
+  .mainText h2 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .mainLinks a {
+    font-size: 15px;
+  }
+
+  .mainLinks a {
+    margin-bottom: 75px;
+  }
+}

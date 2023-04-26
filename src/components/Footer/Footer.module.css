@@ -1,0 +1,192 @@
+#footer {
+  background: #717353;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 250px auto auto auto;
+  justify-content: space-between;
+}
+
+.create {
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 64px;
+  position: relative;
+  margin-bottom: 33px;
+  color: #ffffef;
+}
+
+.create::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 1px;
+  top: 110%;
+  left: 1%;
+  margin-top: 15px;
+  background-color: #ffffef;
+}
+
+.contact p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffef;
+  margin-top: 17px;
+}
+
+.footerExplore p {
+  margin-top: 62px;
+  margin-bottom: 43px;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffef;
+  position: relative;
+}
+
+.footerExplore p::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 1px;
+  top: 190%;
+  left: 1%;
+  background-color: #ffffef;
+}
+
+.footerExplore li {
+  margin-bottom: 16px;
+  list-style: none;
+  position: relative;
+}
+
+.footerExplore li:nth-child(1)::before {
+  position: absolute;
+  content: "\02EF";
+  top: -195%;
+  right: 10%;
+  font-size: 45px;
+}
+
+.footerExplore li:nth-child(4)::before {
+  position: absolute;
+  content: "\02EF";
+  top: -195%;
+  right: 2%;
+  font-size: 45px;
+}
+
+.footerExplore li a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffef;
+}
+
+.footerExplore a:hover {
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.footerHelp p {
+  margin-top: 62px;
+  margin-bottom: 43px;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffef;
+  position: relative;
+}
+
+.footerHelp p::before {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 1px;
+  top: 190%;
+  left: 1%;
+  background-color: #ffffef;
+}
+
+.footerHelp li {
+  margin-bottom: 16px;
+  list-style: none;
+}
+
+.footerHelp li a {
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffef;
+}
+
+.footerHelp a:hover {
+  text-decoration: underline;
+}
+
+.socials {
+  margin-top: 72px;
+}
+
+.socials a {
+  width: 100%;
+  max-width: 22px;
+  height: 22px;
+  color: #000000;
+  margin-right: 15px;
+}
+
+.socials a {
+  font-size: 20px;
+}
+
+.socials a:hover {
+  color: #ffffef;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 768px) {
+  .footerContent {
+    display: grid;
+    grid-template-columns: 150px auto auto auto;
+    justify-content: space-between;
+  }
+
+  .create,
+  .contact p,
+  .footerExplore li a,
+  .footerHelp li a {
+    font-size: 14px;
+  }
+
+  .footerExplore p,
+  .footerHelp p {
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+
+  .footerExplore li,
+  .footerHelp li {
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footerContent {
+    grid-template-columns: 150px;
+    justify-content: center;
+  }
+
+  .footerExplore li:nth-child(1)::before {
+    right: 60%;
+  }
+
+  .footerExplore li:nth-child(4)::before {
+    right: 55%;
+  }
+
+  .socials {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,117 @@
+#table {
+  padding-bottom: 168px;
+}
+
+.tableContent {
+  justify-content: space-between;
+  display: flex;
+  gap: 50px;
+  text-align: center;
+}
+
+.tableText {
+  padding-left: 70px;
+}
+
+.tableText h2 {
+  margin-top: 63px;
+  margin-bottom: 66px;
+  font-size: 29px;
+  font-weight: 400;
+  color: #56593d;
+  position: relative;
+}
+
+.tableText h2::before {
+  position: absolute;
+  content: "";
+  top: 200%;
+  left: 45%;
+  width: 40px;
+  height: 1px;
+  background-color: #717353;
+}
+
+.tableText p {
+  max-width: 344px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #56593d;
+}
+
+.tableImg {
+  width: 683px;
+}
+
+@media only screen and (max-width: 1230px) {
+  .tableImg {
+    width: 450px;
+  }
+
+  .tableText h2 {
+    font-size: 20px;
+  }
+
+  .tableText p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .tableImg {
+    width: 400px;
+    margin-bottom: 120px;
+  }
+
+  .tableText h2 {
+    margin-top: 105px;
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+
+  .tableText h2::before {
+    position: absolute;
+    content: "";
+    top: 200%;
+    left: 45%;
+    width: 40px;
+    height: 1px;
+    background-color: #717353;
+  }
+
+  .tableText p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #table {
+    padding-bottom: 0;
+  }
+
+  .tableContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tableText {
+    padding-left: 0px;
+  }
+
+  .tableText h2 {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .tableImg {
+    width: 260px;
+  }
+
+  .tableText p {
+    font-size: 14px;
+  }
+}
